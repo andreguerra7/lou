@@ -133,8 +133,24 @@ header h2{
 	cursor: pointer;
 }
 
-#divNewGameStatsInfo{
+#divNewGameStatsInfo, #divNewGameGodInfo {
 	color: red;
+}
+
+.btnGodSelected {
+	text-shadow: 2px 2px 3px #548ddd;
+	cursor: pointer;
+}
+
+.btnGodNotSelected {
+	color:white;
+	text-shadow: none;
+	cursor: pointer;
+
+}
+
+#btnNewGameLife, #btnNewGameDeath{
+	cursor: pointer;
 }
 
 /*Imported*/

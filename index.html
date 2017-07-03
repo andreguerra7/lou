@@ -90,7 +90,7 @@
 
 </div>
 <!--NEW GAME-->
-<div id="divNewGame" class="container">
+<div id="divNewGame" class="container" aria-hidden="true">
     <h1> Select your god/equip/custom (CHANGE-TEXT-WITH-JS)</h1>
     <br>
     <h4>Click on the tabs below</h4>
@@ -102,33 +102,35 @@
      <div class="row">
         <div class="col-sm-2 col-md-2">
         </div>
-        <div class="col-sm-1 col-md-1">
-            <i class="fa fa-globe"></i><br>Life
+        <div id="btnNewGameLife" class="col-sm-1 col-md-1 cursorPointer">
+            <i id="btnGodLife" class="fa fa-2x fa-globe" aria-hidden="true"></i><br>Life
         </div>
-        <div class="col-sm-1 col-md-1">
-            <i class="fa fa-low-vision"></i><br>Death
+        <div id="btnNewGameDeath"  class="col-sm-1 col-md-1 cursorPointer">
+            <i id="btnGodDeath" class="fa fa-2x fa-low-vision" aria-hidden="true"></i><br>Death
         </div>
-        <div class="col-sm-1 col-md-1">
-            <i class="fa fa-balance-scale"></i><br>Order
+        <div id="btnNewGameOrder" class="col-sm-1 col-md-1 cursorPointer">
+            <i id="btnGodOrder" class="fa fa-2x fa-balance-scale" aria-hidden="true"></i><br>Order
         </div>
-        <div class="col-sm-1 col-md-1">
-            <i class="fa fa-certificate"></i><br>Chaos
+        <div id="btnNewGameChaos" class="col-sm-1 col-md-1 cursorPointer">
+            <i id="btnGodChaos" class="fa fa-2x fa-certificate" aria-hidden="true"></i><br>Chaos
         </div>
-        <div class="col-sm-1 col-md-1">
-            <i class="fa fa-tint"></i><br>Water
+        <div  id="btnNewGameWater" class="col-sm-1 col-md-1 cursorPointer">
+            <i id="btnGodWater" class="fa fa-2x fa-tint" aria-hidden="true"></i><br>Water
         </div>
-        <div class="col-sm-1 col-md-1">
-            <i class="fa fa-bolt"></i><br>Air
+        <div id="btnNewGameAir"  class="col-sm-1 col-md-1 cursorPointer">
+            <i id="btnGodAir" class="fa fa-2x fa-cloud" aria-hidden="true"></i><br>Air
         </div>
-        <div class="col-sm-1 col-md-1">
-            <i class="fa fa-fire"></i><br>Fire
+        <div id="btnNewGameFire"  class="col-sm-1 col-md-1 cursorPointer">
+            <i id="btnGodFire" class="fa fa-2x fa-fire" aria-hidden="true"></i><br>Fire
         </div>
-        <div class="col-sm-1 col-md-1">
-            <i class="fa fa-tree"></i><br>Earth
+        <div id="btnNewGameEarth"  class="col-sm-1 col-md-1 cursorPointer">
+            <i id="btnGodEarth"  class="fa fa-2x fa-tree" aria-hidden="true"></i><br>Earth
         </div>
-        <div class="col-sm-2 col-md-2">
+        <div class="col-sm-2 col-md-2 cursorPointer">
         </div>
     </div>
+    <br>
+    <small id="divNewGameGodInfo" ></small>
 </div>
 <br>
 <br>
