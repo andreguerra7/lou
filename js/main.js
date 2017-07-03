@@ -16,8 +16,8 @@ document.getElementById("btnNewGame").onclick = function(){
 		$("#divHome").fadeOut("slow","linear");
 		$("#divNewGame").fadeIn("slow","linear");
 }
-//New Game God
-//life
+//New Game God path
+//choose life
 document.getElementById("btnNewGameLife").onclick = function (){
 	$("#btnGodLife").removeClass("btnGodNotSelected");
 	$("#btnGodLife").addClass("btnGodSelected");
@@ -33,7 +33,7 @@ document.getElementById("btnNewGameLife").onclick = function (){
 	$("#btnGodEarth").attr("class","fa fa-2x fa-tree btnGodNotSelected");
 	$("#divNewGameGodInfo").html("You've chosen: "+" "+god);
 }
-//death
+//choose death
 document.getElementById("btnNewGameDeath").onclick = function (){
 	$("#btnGodDeath").removeClass("btnGodNotSelected");
 	$("#btnGodDeath").addClass("btnGodSelected");
@@ -49,7 +49,7 @@ document.getElementById("btnNewGameDeath").onclick = function (){
 	$("#btnGodEarth").attr("class","fa fa-2x fa-tree btnGodNotSelected");
 	$("#divNewGameGodInfo").html("You've chosen: "+" "+god);
 }
-//order
+//choose order
 document.getElementById("btnNewGameOrder").onclick = function (){
 	$("#btnGodOrder").removeClass("btnGodNotSelected");
 	$("#btnGodOrder").addClass("btnGodSelected");
@@ -65,7 +65,7 @@ document.getElementById("btnNewGameOrder").onclick = function (){
 	$("#btnGodEarth").attr("class","fa fa-2x fa-tree btnGodNotSelected");
 	$("#divNewGameGodInfo").html("You've chosen: "+" "+god);
 }
-//Chaos
+//choose Chaos
 document.getElementById("btnNewGameChaos").onclick = function (){
 	$("#btnGodChaos").removeClass("btnGodNotSelected");
 	$("#btnGodChaos").addClass("btnGodSelected");
@@ -81,7 +81,7 @@ document.getElementById("btnNewGameChaos").onclick = function (){
 	$("#btnGodEarth").attr("class","fa fa-2x fa-tree btnGodNotSelected");
 	$("#divNewGameGodInfo").html("You've chosen: "+" "+god);
 }
-//Water
+//choose Water
 document.getElementById("btnNewGameWater").onclick = function (){
 	$("#btnGodWater").removeClass("btnGodNotSelected");
 	$("#btnGodWater").addClass("btnGodSelected");
@@ -97,7 +97,7 @@ document.getElementById("btnNewGameWater").onclick = function (){
 	$("#btnGodEarth").attr("class","fa fa-2x fa-tree btnGodNotSelected");
 	$("#divNewGameGodInfo").html("You've chosen: "+" "+god);
 }
-//Air
+//choose Air
 document.getElementById("btnNewGameAir").onclick = function (){
 	$("#btnGodAir").removeClass("btnGodNotSelected");
 	$("#btnGodAir").addClass("btnGodSelected");
@@ -113,7 +113,7 @@ document.getElementById("btnNewGameAir").onclick = function (){
 	$("#btnGodEarth").attr("class","fa fa-2x fa-tree btnGodNotSelected");
 	$("#divNewGameGodInfo").html("You've chosen: "+" "+god);
 }
-//Fire
+//choose Fire
 document.getElementById("btnNewGameFire").onclick = function (){
 	$("#btnGodFire").removeClass("btnGodNotSelected");
 	$("#btnGodFire").addClass("btnGodSelected");
@@ -129,7 +129,7 @@ document.getElementById("btnNewGameFire").onclick = function (){
 	$("#btnGodEarth").attr("class","fa fa-2x fa-tree btnGodNotSelected");
 	$("#divNewGameGodInfo").html("You've chosen: "+" "+god);
 }
-//Earth
+//choose Earth
 document.getElementById("btnNewGameEarth").onclick = function (){
 	$("#btnGodEarth").removeClass("btnGodNotSelected");
 	$("#btnGodEarth").addClass("btnGodSelected");
