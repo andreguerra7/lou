@@ -1,147 +1,238 @@
-@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Karla|Josefin+Sans');
+
 @font-face {
-	font-family: 'MedievalSharp', cursive;
 	font-family: 'Karla', sans-serif;
+	font-family: 'Shadows Into Light', cursive;
 }
 
-/*Imported*/
 html, body {
-    width: 100%;
-    height: 100%;
-    font-family: 'Karla', sans-serif;
+	width: 100%;
+	height: 100%;
+	font-family: 'Josefin Sans', sans-serif;
 }
 
 body {
-    overflow-x: hidden;
-  	min-height: 100%;
+	overflow-x: hidden;
+	background-color: black;
 }
 
-.fullScreenBg{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: 1000;
-}
-
-.fullscreenBgVideo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    transform: translate(-50%, -50%);
-}
-
-@media (max-width: 767px) {
-    .fullScreenBg {
-    	background-image: url("../img/videoimg.jpg");
-    	background-repeat: no-repeat;
-        background-color: black;
-        background-position: top;
-    }
-
-    .fullscreenBgVideo{
-        display: none;
-    }
-}
-
-.social li a:hover {
-    opacity: 0.5;
-}
-
-footer {
-    z-index: 3000;
-    position: relative;
-    background: #ffffff;
-    padding: 40px 0px;
-
-}
-
-.btnHomePrimary {
-    background-color: rgba(255,255,255,0.08);
-    color: #ffffff;
-}
-
-    .btnHomePrimary:hover, .btnHomePrimary:focus, .btnHomePrimary:active {
-        background-color: rgba(150,150,150,0.5);
-        transition: all 0.35s ease-in-out;
-        color: #333;
-    }
-    .btn-primary:hover {
-        background-color: #910a1a;
-        color: #ffffff;
-        transition: all 0.35s ease-in-out;
-    }
-
-    .btn-primary.active:hover {
-        background-color: #910a1a;
-        color: #ffffff;
-        transition: all 0.35s ease-in-out;
-    }
-
-    .btn-primary.active {
-        background-color: #910a1a;
-        color: #ffffff;
-        transition: all 0.35s ease-in-out;
-    }
-
-    .btn-primary.focus {
-        background-color: #910a1a;
-        color: #ffffff;
-        transition: all 0.35s ease-in-out;
-    }
-
-/*new*/
-
-#divHomeLogo {
-	text-align: center;
-	z-index: 3000;
-	position: relative;
-	margin-top: 15%;
-	margin-bottom: 15%;
-}
 
 
 .imgTitle {
-	height: 50%;
+	height: 100%;
 	width: auto;
-	margin-bottom: 4%;
+	margin-bottom: 1%;
+	margin-top: 1%;
 	border-radius: 25%;
 	opacity: 0.7;
 	filter: blur(2px);
 	-webkit-filter: blur(2px);
-    filter: alpha(opacity=70);
+	filter: alpha(opacity=70);
 }
 
 /* MAke this on JS
 
-     -webkit-transition: content 0.3s linear;
-   -moz-transition: content 0.3s linear;
-   
+ -webkit-transition: content 0.3s linear;
+-moz-transition: content 0.3s linear;
+
 .imgTitle:hover {
-	height: 50%;
-	width: auto;
-	margin-bottom: 4%;
-	border-radius: 25%;
-	opacity: 0.5;
-	filter: alpha(opacity=50);
-	filter: blur(2px);
-	-webkit-filter: blur(2px);
-    content: url("../img/magicabstract2.jpg");
+height: 50%;
+width: auto;
+margin-bottom: 4%;
+border-radius: 25%;
+opacity: 0.5;
+filter: alpha(opacity=50);
+filter: blur(2px);
+-webkit-filter: blur(2px);
+content: url("../img/magicabstract2.jpg");
 } */
 
 header h1 {
-	color:white;
 	font-size: 500%;
-	text-shadow: 2px 2px 8px #548ddd;
+	color:white;
+	text-shadow: 2px 2px 3px #548ddd;
+}
+
+header h2{
+	text-align: center;
+	font-size: 1.4em;
+	color:white;
+	font-family: 'Josefin Sans', sans-serif;
+	text-shadow: 1px 1px 5px black;
+	letter-spacing: 4px;
+	line-height: 150%;
 }
 
 .btn-primary {
 	background-color: rgba(255,0,255,0.5);
 	padding: 1% 1%;
 }
+
+#divHomeLogo{
+	position: absolute;
+	z-index: 3000;
+	text-align: center;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+}
+
+#btnLoadGame{
+	margin-top: 5%;
+}
+
+#divHomeImg {
+	height: 100%;
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	z-index: 2000;
+}
+
+#btnNewGame{
+	margin-top: 3%;
+}
+
+#divHomeLogo1 {  
+	height: 100%;  
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	z-index: 2000;
+}
+#divHomeLogo2 { 
+	height: 100%;
+	margin: 0 auto; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	z-index: 2000;
+}
+
+#divHomeLogo1 article {height: 50%; position: absolute; top: 25%; width: 100%; }
+
+#divHomeImg article {height: 50%; position: absolute; top: 25%; width: 100%; }
+
+#divHomeLogo2 article {height: 50%; position: absolute; top: 50%; width: 100%; }
+
+/*New Game*/
+
+#divNewGame {
+	display:none;
+	color:white;
+	text-align: center;
+	font-size: 115%;
+}
+
+.cursorPointer {
+	cursor: pointer;
+}
+
+#divNewGameStatsInfo{
+	color: red;
+}
+
+/*Imported*/
+.fullScreenBg{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.fullscreenBgVideo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: auto;
+	min-width: 100%;
+	min-height: 100%;
+	transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+	.fullScreenBg {
+		background-image: url("../img/videoimg.jpg");
+		background-repeat: no-repeat;
+		background-color: black;
+		background-position: top;
+	}
+
+	.fullscreenBgVideo{
+		display: none;
+	}
+}
+
+.social li a:hover {
+	opacity: 0.5;
+}
+
+footer {
+	z-index: 3000;
+	position: relative;
+	background: #ffffff;
+	padding: 40px 0px;
+
+}
+
+.btnHomePrimary {
+	background-color: rgba(255,255,255,0.08);
+	color: #ffffff;
+}
+
+.btnHomePrimary:hover, .btnHomePrimary:focus, .btnHomePrimary:active {
+	background-color: rgba(150,150,150,0.5);
+	transition: all 0.35s ease-in-out;
+	color: #333;
+}
+.btn-primary:hover {
+	background-color: #910a1a;
+	color: #ffffff;
+	transition: all 0.35s ease-in-out;
+}
+
+.btn-primary.active:hover {
+	background-color: #910a1a;
+	color: #ffffff;
+	transition: all 0.35s ease-in-out;
+}
+
+.btn-primary.active {
+	background-color: #910a1a;
+	color: #ffffff;
+	transition: all 0.35s ease-in-out;
+}
+
+.btn-primary.focus {
+	background-color: #910a1a;
+	color: #ffffff;
+	transition: all 0.35s ease-in-out;
+}
+
+.fa-envelope-o {
+	color: #4ec3cd;
+	font-size: 22px;
+	display: block;
+	padding-top: 15px;
+	width: 60px;
+	height: 60px;
+	border: 2px solid #4ec3cd;
+	border-radius: 30px;
+	margin: auto;
+}
+
+.fa-lg {
+	font-size: 1.33333em;
+	line-height: 0.75em;
+	vertical-align: -10%;
+}
+
