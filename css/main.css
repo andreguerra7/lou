@@ -153,6 +153,60 @@ header h2{
 	cursor: pointer;
 }
 
+.divNewGameDescParent {
+	text-align: center;
+	max-width: 50%;
+}
+
+.divNewGameDesc{
+	background-color: rgba(255,255,255,0.08);
+	min-width: 15%;
+	min-height: 15%;
+	text-align: center;
+	padding: 1% 1% 1% 1%;
+}
+
+/* dropdown */
+.dropdown-toggle {
+    background-color: white;
+    color: black;
+    padding: 10%;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+	align-self: left;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown-toggle {
+    background-color: rgba(255,255,255,0.08);
+}
+
 /*Imported*/
 .fullScreenBg{
 	position: fixed;

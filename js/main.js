@@ -32,6 +32,7 @@ document.getElementById("btnNewGameLife").onclick = function (){
 	$("#btnGodFire").attr("class","fa fa-2x fa-fire btnGodNotSelected");
 	$("#btnGodEarth").attr("class","fa fa-2x fa-tree btnGodNotSelected");
 	$("#divNewGameGodInfo").html("You've chosen: "+" "+god);
+	$("#divGodDesc").html("The ones who tries to keep the mana balanced on the world <br></br> It gives you 2 addional status on wisdom and 1 one strenght");
 }
 //choose death
 document.getElementById("btnNewGameDeath").onclick = function (){
@@ -48,6 +49,7 @@ document.getElementById("btnNewGameDeath").onclick = function (){
 	$("#btnGodFire").attr("class","fa fa-2x fa-fire btnGodNotSelected");
 	$("#btnGodEarth").attr("class","fa fa-2x fa-tree btnGodNotSelected");
 	$("#divNewGameGodInfo").html("You've chosen: "+" "+god);
+	$("#divGodDesc").html("The ones who tries to keep the mana all to them <br></br> It gives you 2 addional status on strenght and 1 one dexterity");
 }
 //choose order
 document.getElementById("btnNewGameOrder").onclick = function (){
@@ -177,6 +179,7 @@ document.getElementById("newGameStatsStrADD").onclick = function(){
 	} else { $("#divNewGameStatsInfo").html("You don't have enought points"); }
 
 	$("#divPointsLeft").html(statsPoints +" "+"points remaining");
+	$("#divStatsDesc").html("Strenght <br></br> It gives you more Life, it's useful for blablabla");
 }
 //str remove
 document.getElementById("newGameStatsStrREM").onclick = function(){
@@ -238,6 +241,7 @@ document.getElementById("newGameStatsDexADD").onclick = function(){
 	} else { $("#divNewGameStatsInfo").html("You don't have enought points"); }
 
 	$("#divPointsLeft").html(statsPoints +" "+"points remaining");
+	$("#divStatsDesc").html("Dexterity <br></br> It gives you more....dexterity, it's useful for blablabla");
 }
 //dex remove
 document.getElementById("newGameStatsDexREM").onclick = function(){
@@ -269,28 +273,28 @@ document.getElementById("newGameStatsDexREM").onclick = function(){
 	$("#divPointsLeft").html(statsPoints +" "+"points remaining");
 }
 
-//int add
-document.getElementById("newGameStatsIntADD").onclick = function(){
+//Wis add
+document.getElementById("newGameStatsWisADD").onclick = function(){
 	if (statsPoints > 0){
-		if ( $("#intStatsCircle2").hasClass("fa-circle-o") ) {
-			$("#intStatsCircle2").removeClass ("fa-circle-o");
-			$("#intStatsCircle2").addClass ("fa-circle");
+		if ( $("#wisStatsCircle2").hasClass("fa-circle-o") ) {
+			$("#wisStatsCircle2").removeClass ("fa-circle-o");
+			$("#wisStatsCircle2").addClass ("fa-circle");
 			statsPoints = statsPoints - 1;
 			$("#divNewGameStatsInfo").html(" ");
-		} else if ( $("#intStatsCircle3").hasClass("fa-circle-o") ) {
-			$("#intStatsCircle3").removeClass ("fa-circle-o");
-			$("#intStatsCircle3").addClass ("fa-circle");
+		} else if ( $("#wisStatsCircle3").hasClass("fa-circle-o") ) {
+			$("#wisStatsCircle3").removeClass ("fa-circle-o");
+			$("#wisStatsCircle3").addClass ("fa-circle");
 			statsPoints = statsPoints - 1;
 			$("#divNewGameStatsInfo").html(" ");
-		} else if ( $("#intStatsCircle4").hasClass("fa-circle-o") ) {
-			$("#intStatsCircle4").removeClass ("fa-circle-o");
-			$("#intStatsCircle4").addClass ("fa-circle");
+		} else if ( $("#wisStatsCircle4").hasClass("fa-circle-o") ) {
+			$("#wisStatsCircle4").removeClass ("fa-circle-o");
+			$("#wisStatsCircle4").addClass ("fa-circle");
 			statsPoints = statsPoints - 1;
 			$("#divNewGameStatsInfo").html(" ");
 		} 
-		else if ( $("#intStatsCircle5").hasClass("fa-circle-o") ) {
-			$("#intStatsCircle5").removeClass ("fa-circle-o");
-			$("#intStatsCircle5").addClass ("fa-circle");
+		else if ( $("#wisStatsCircle5").hasClass("fa-circle-o") ) {
+			$("#wisStatsCircle5").removeClass ("fa-circle-o");
+			$("#wisStatsCircle5").addClass ("fa-circle");
 			statsPoints = statsPoints - 1;
 			$("#divNewGameStatsInfo").html(" ");
 		} else { $("#divNewGameStatsInfo").html("Maximun reached");}
@@ -299,33 +303,45 @@ document.getElementById("newGameStatsIntADD").onclick = function(){
 	} else { $("#divNewGameStatsInfo").html("You don't have enought points"); }
 
 	$("#divPointsLeft").html(statsPoints +" "+"points remaining");
+	$("#divStatsDesc").html("Wisdom <br></br> It gives you more wisdom, it's useful for blablabla");
 }
 //int remove
-document.getElementById("NewGameStatsIntREM").onclick = function(){
-		if ( $("#intStatsCircle2").hasClass("fa-circle") && statsPoints < 6) {
+document.getElementById("NewGameStatsWisREM").onclick = function(){
+		if ( $("#wisStatsCircle2").hasClass("fa-circle") && statsPoints < 6) {
 
-		if ( $("#intStatsCircle5").hasClass("fa-circle") ) {
-			$("#intStatsCircle5").removeClass ("fa-circle");
-			$("#intStatsCircle5").addClass ("fa-circle-o");
+		if ( $("#wisStatsCircle5").hasClass("fa-circle") ) {
+			$("#wisStatsCircle5").removeClass ("fa-circle");
+			$("#wisStatsCircle5").addClass ("fa-circle-o");
 			statsPoints = statsPoints + 1;
 			$("#divNewGameStatsInfo").html(" ");
-		} else if ( $("#intStatsCircle4").hasClass("fa-circle") ) {
-			$("#intStatsCircle4").removeClass ("fa-circle");
-			$("#intStatsCircle4").addClass ("fa-circle-o");
+		} else if ( $("#wisStatsCircle4").hasClass("fa-circle") ) {
+			$("#wisStatsCircle4").removeClass ("fa-circle");
+			$("#wisStatsCircle4").addClass ("fa-circle-o");
 			statsPoints = statsPoints + 1;
 			$("#divNewGameStatsInfo").html(" ");
-		} else if ( $("#intStatsCircle3").hasClass("fa-circle") ) {
-			$("#intStatsCircle3").removeClass ("fa-circle");
-			$("#intStatsCircle3").addClass ("fa-circle-o");
+		} else if ( $("#wisStatsCircle3").hasClass("fa-circle") ) {
+			$("#wisStatsCircle3").removeClass ("fa-circle");
+			$("#wisStatsCircle3").addClass ("fa-circle-o");
 			statsPoints = statsPoints + 1;
 			$("#divNewGameStatsInfo").html(" ");
 		} 
-		else if ( $("#intStatsCircle2").hasClass("fa-circle") ) {
-			$("#intStatsCircle2").removeClass ("fa-circle");
-			$("#intStatsCircle2").addClass ("fa-circle-o");
+		else if ( $("#wisStatsCircle2").hasClass("fa-circle") ) {
+			$("#wisStatsCircle2").removeClass ("fa-circle");
+			$("#wisStatsCircle2").addClass ("fa-circle-o");
 			statsPoints = statsPoints + 1;
 			$("#divNewGameStatsInfo").html(" ");
 		}
 	}
 	$("#divPointsLeft").html(statsPoints +" "+"points remaining");
+}
+
+//Change race description
+document.getElementById("selectRaceHuman").onclick = function(){
+	$("#divRaceDesc").html("Humans <br></br> Gives you nothing, loose nothing, human...");
+}
+document.getElementById("selectRaceElf").onclick = function(){
+	$("#divRaceDesc").html("Elf <br></br> You're tall and have pointing ears, great");
+}
+document.getElementById("selectRaceDawrf").onclick = function(){
+	$("#divRaceDesc").html("Flying Healer Dawrf <br></br> the name says it all");
 }

@@ -36,6 +36,7 @@
                                     </h2>
                                 </div>
                                 <br>
+                                <br>
                                 <i class="fa fa-3x fa-angle-double-down" aria-hidden="true"></i>
                             </article>
                         </section>
@@ -96,7 +97,7 @@
     <h4>Click on the tabs below</h4>
     <br>
     <div id="divNewGameGod">
-       Choose your path
+       Choose your Path
        <br>
        <br>
        <div class="row">
@@ -131,11 +132,17 @@
     </div>
     <br>
     <small id="divNewGameGodInfo" ></small>
+    <br>
+<div id="divGodDescParent" class="container divNewGameDescParent"> <!--Gods description-->
+    <div id="divGodDesc" class="divNewGameDesc">
+    </div>
+</div>
+<br>
 </div>
 <br>
 <br>
 <div id="divNewGameStats"> <!--NewGame Stats-->
-    Choose your stats
+    Choose your Will
     <br>
     <small id="divPointsLeft">5 points remaining</small>
     <br>
@@ -176,13 +183,13 @@
     <div class="col-sm-3 col-md-3">
     </div>
     <div class="col-sm-2 col-md-2">
-       Intelligence
+       Wisdom
    </div>
    <div class="col-sm-2 col-md-2"><!--Stats circles-->
-    <i class="fa fa-circle fa-fw"></i><i id="intStatsCircle2" class="fa fa-circle-o fa-fw"></i><i id="intStatsCircle3" class="fa fa-circle-o fa-fw"></i><i id="intStatsCircle4" class="fa fa-circle-o fa-fw"></i><i id="intStatsCircle5" class="fa fa-circle-o fa-fw"></i>
+    <i class="fa fa-circle fa-fw"></i><i id="wisStatsCircle2" class="fa fa-circle-o fa-fw"></i><i id="wisStatsCircle3" class="fa fa-circle-o fa-fw"></i><i id="wisStatsCircle4" class="fa fa-circle-o fa-fw"></i><i id="wisStatsCircle5" class="fa fa-circle-o fa-fw"></i>
 </div>
 <div class="col-sm-2 col-md-2"><!--Stats btns-->
-    <i id="newGameStatsIntADD" class="fa fa-plus-square fa-fw cursorPointer"></i><i id="NewGameStatsIntREM" class="fa fa-minus-square cursorPointer"></i> 
+    <i id="newGameStatsWisADD" class="fa fa-plus-square fa-fw cursorPointer"></i><i id="NewGameStatsWisREM" class="fa fa-minus-square cursorPointer"></i> 
 </div>
 <div class="col-sm-3 col-md-3">
 </div>
@@ -190,19 +197,160 @@
 </div>
 <small id="divNewGameStatsInfo"></small>
 <br>
+<br>
+<div id="divStatsDescParent" class="container divNewGameDescParent"> <!--Stats description-->
+    <div id="divStatsDesc" class="divNewGameDesc">
+
+    </div>
+</div>
+<br>
 </div>
 <br>
 <br>
-Choose your Equip <br>
+Choose your Wear <br>
 L: Elven Cloak or Light Staff<br>
 C: Leather Clothes or Sandspear<br>
 A: Wind Clock or Ranger Bow<br>
-
-Choose your customs<br>
-Name
-Race
-Details
+<br>
+<div id="divNewGameCustom"> <!--New Game Custom-->
+<div class="container">
+Choose your Past<br>
+<br>
+<div class="row"><!--New Game Name-->
+<div class="col-sm-4 col-md-4">
+</div>
+<div class="col-sm-4 col-md-4">
+<div class="form-group">
+  <label for="playerName">Name:</label>
+  <input type="text" class="form-control" id="playerName">
+</div>
+</div>
+<div class="col-sm-4 col-md-4">
+</div>
+</div>
+<br>
+Choose your Blood <!--New Game Race-->
+<br>
+<div class="row"> <!--Races row 1-->
+<div class="col-sm-2 col-md-2">
+</div>
+<div class="col-sm-2 col-md-2">
+<div class="radio">
+  <label><input id="selectRaceHuman" type="radio" name="race">Human</label>
+</div>
+</div>
+<div class="col-sm-2 col-md-2">
+<div class="radio">
+  <label><input id="selectRaceHuman"  type="radio" name="race">Human</label>
+</div>
+</div>
+<div class="col-sm-2 col-md-2">
+<div class="radio">
+  <label><input id="selectRaceHuman"  type="radio" name="race">Human</label>
+</div>
+</div>
+<div class="col-sm-2 col-md-2">
+<div class="radio">
+  <label><input id="selectRaceHuman"  type="radio" name="race">Human</label>
+</div>
+</div>
+<div class="col-sm-2 col-md-2">
+</div>
+</div>
+<div class="row"> <!--Races row 2-->
+<div class="col-sm-2 col-md-2">
+</div>
+<div class="col-sm-2 col-md-2">
+<div class="radio">
+  <label><input id="selectRaceElf"  type="radio" name="race">Elf</label>
+</div>
+</div>
+<div class="col-sm-2 col-md-2">
+<div class="radio">
+  <label><input  id="selectRaceElf"  type="radio" name="race">Elf</label>
+</div>
+</div>
+<div class="col-sm-2 col-md-2">
+<div class="radio">
+  <label><input id="selectRaceElf"   type="radio" name="race">Elf</label>
+</div>
+</div>
+<div class="col-sm-2 col-md-2">
+<div class="radio">
+  <label><input id="selectRaceElf"   type="radio" name="race">Elf</label>
+</div>
+</div>
+<div class="col-sm-2 col-md-2">
+</div>
+</div>
+<div class="row"> <!--Races row 3-->
+<div class="col-sm-2 col-md-2">
+</div>
+<div class="col-sm-2 col-md-2">
+<div class="radio">
+  <label><input id="selectRaceDawrf" type="radio" name="race">Flying Healer Dawrf</label>
+</div>
+</div>
+<div class="col-sm-2 col-md-2">
+<div class="radio">
+  <label><input id="selectRcaeDawrf" type="radio" name="race">Flying Healer Dawrf</label>
+</div>
+</div>
+<div class="col-sm-2 col-md-2">
+<div class="radio">
+  <label><input id="selectRaceDawrf" type="radio" name="race">Flying Healer Dawrf</label>
+</div>
+</div>
+<div class="col-sm-2 col-md-2">
+<div class="radio">
+  <label><input id="selectRaceDawrf" type="radio" name="race">Flying Healer Dawrf</label>
+</div>
+</div>
+<div class="col-sm-2 col-md-2">
+</div>
+</div>
+<br>
+<div id="divRaceDescParent" class="container divNewGameDescParent"> <!--Races description-->
+    <div id="divRaceDesc" class="divNewGameDesc">
+    </div>
+</div>
+<br>
+<div class="row"><!--New Game Race 2-->
+<div class="col-sm-4 col-md-4">
+</div>
+<div class="col-sm-4 col-md-4">
+<div class="dropdown">
+  <button class="btn-lg btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Race
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+    <li><a>Human</a></li>
+    <li><a>Elf</a></li>
+    <li><a>Flyer helaing dawrf</a></li>
+  </ul>
+</div>
+</div>
+<div class="col-sm-4 col-md-4">
+</div>
+</div>
+<br>
+<div class="row"><!--New Game Details-->
+<div class="col-sm-4 col-md-4">
+</div>
+<div class="col-sm-4 col-md-4">
+<div class="form-group">
+  <label for="playerDetails">Details:</label>
+  <textarea class="form-control" rows="5" id="playerDetails"></textarea>
+</div>
+</div>
+<div class="col-sm-4 col-md-4">
+</div>
+</div>
+<br>
 Music Options
+<br>
+</div>
+</div>
+</div>
 </div>
 <!--MAIN GAME-->
 
