@@ -127,6 +127,7 @@ header h2{
 	color:white;
 	text-align: center;
 	font-size: 115%;
+	max-width: 75%;
 }
 
 .cursorPointer {
@@ -160,9 +161,19 @@ header h2{
 
 .divNewGameDesc{
 	background-color: rgba(255,255,255,0.08);
-	min-width: 15%;
-	min-height: 15%;
+	min-width: 20%;
+	min-height: 25%;
 	text-align: center;
+	padding: 1% 1% 1% 1%;
+}
+
+#divNewGameGod , #divNewGameStats {
+	display: none;
+}
+
+.newGameTab{
+	min-width: 50%;
+	background-color: rgba(255,255,255,0.08);
 	padding: 1% 1% 1% 1%;
 }
 

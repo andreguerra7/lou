@@ -15,8 +15,15 @@ touchScroll:true,
 document.getElementById("btnNewGame").onclick = function(){
 		$("#divHome").fadeOut("slow","linear");
 		$("#divNewGame").fadeIn("slow","linear");
+		$.scrollify.instantPrevious();
+		$.scrollify.instantPrevious();
+		$.scrollify.disable();
 }
 //New Game God path
+document.getElementById("divNewGameGodTab").onclick = function(){
+	$("#divNewGameGod").fadeIn("slow","linear");
+	$("#divNewGameStats").fadeOut("slow","linear");
+}
 //choose life
 document.getElementById("btnNewGameLife").onclick = function (){
 	$("#btnGodLife").removeClass("btnGodNotSelected");
@@ -149,6 +156,10 @@ document.getElementById("btnNewGameEarth").onclick = function (){
 }
 
 //NewGame Stats
+document.getElementById("divNewGameStatsTab").onclick = function(){
+	$("#divNewGameStats").fadeIn("slow","linear");
+	$("#divNewGameGod").fadeOut("slow","linear");
+}
 //str add
 document.getElementById("newGameStatsStrADD").onclick = function(){
 	if (statsPoints > 0){
@@ -173,6 +184,16 @@ document.getElementById("newGameStatsStrADD").onclick = function(){
 			$("#strStatsCircle5").addClass ("fa-circle");
 			statsPoints = statsPoints - 1;
 			$("#divNewGameStatsInfo").html(" ");
+		} else if ( $("#strStatsCircle6").hasClass("fa-circle-o") ) {
+			$("#strStatsCircle6").removeClass ("fa-circle-o");
+			$("#strStatsCircle6").addClass ("fa-circle");
+			statsPoints = statsPoints - 1;
+			$("#divNewGameStatsInfo").html(" ");
+		} else if ( $("#strStatsCircle7").hasClass("fa-circle-o") ) {
+			$("#strStatsCircle7").removeClass ("fa-circle-o");
+			$("#strStatsCircle7").addClass ("fa-circle");
+			statsPoints = statsPoints - 1;
+			$("#divNewGameStatsInfo").html(" ");
 		} else {$("#divNewGameStatsInfo").html("Maximun reached");}
 
 
@@ -183,9 +204,19 @@ document.getElementById("newGameStatsStrADD").onclick = function(){
 }
 //str remove
 document.getElementById("newGameStatsStrREM").onclick = function(){
-		if ( $("#strStatsCircle2").hasClass("fa-circle") && statsPoints < 6 ) {
+		if ( $("#strStatsCircle2").hasClass("fa-circle") && statsPoints < 8 ) {
 
-		if ( $("#strStatsCircle5").hasClass("fa-circle") ) {
+		if ( $("#strStatsCircle7").hasClass("fa-circle") ) {
+			$("#strStatsCircle7").removeClass ("fa-circle");
+			$("#strStatsCircle7").addClass ("fa-circle-o");
+			statsPoints = statsPoints + 1;
+			$("#divNewGameStatsInfo").html(" ");
+		}  else if ( $("#strStatsCircle6").hasClass("fa-circle") ) {
+			$("#strStatsCircle6").removeClass ("fa-circle");
+			$("#strStatsCircle6").addClass ("fa-circle-o");
+			statsPoints = statsPoints + 1;
+			$("#divNewGameStatsInfo").html(" ");
+		}  else if ( $("#strStatsCircle5").hasClass("fa-circle") ) {
 			$("#strStatsCircle5").removeClass ("fa-circle");
 			$("#strStatsCircle5").addClass ("fa-circle-o");
 			statsPoints = statsPoints + 1;
@@ -235,7 +266,17 @@ document.getElementById("newGameStatsDexADD").onclick = function(){
 			$("#dexStatsCircle5").addClass ("fa-circle");
 			statsPoints = statsPoints - 1;
 			$("#divNewGameStatsInfo").html(" ");
-		} else {$("#divNewGameStatsInfo").html("Maximun reached");}
+		}else if ( $("#dexStatsCircle6").hasClass("fa-circle-o") ) {
+			$("#dexStatsCircle6").removeClass ("fa-circle-o");
+			$("#dexStatsCircle6").addClass ("fa-circle");
+			statsPoints = statsPoints - 1;
+			$("#divNewGameStatsInfo").html(" ");
+		} else if ( $("#dexStatsCircle7").hasClass("fa-circle-o") ) {
+			$("#dexStatsCircle7").removeClass ("fa-circle-o");
+			$("#dexStatsCircle7").addClass ("fa-circle");
+			statsPoints = statsPoints - 1;
+			$("#divNewGameStatsInfo").html(" ");
+		}  else {$("#divNewGameStatsInfo").html("Maximun reached");}
 
 
 	} else { $("#divNewGameStatsInfo").html("You don't have enought points"); }
@@ -245,9 +286,19 @@ document.getElementById("newGameStatsDexADD").onclick = function(){
 }
 //dex remove
 document.getElementById("newGameStatsDexREM").onclick = function(){
-		if ( $("#dexStatsCircle2").hasClass("fa-circle") && statsPoints < 6) {
+		if ( $("#dexStatsCircle2").hasClass("fa-circle") && statsPoints < 7) {
 
-		if ( $("#dexStatsCircle5").hasClass("fa-circle") ) {
+		if ( $("#dexStatsCircle7").hasClass("fa-circle") ) {
+			$("#dexStatsCircle7").removeClass ("fa-circle");
+			$("#dexStatsCircle7").addClass ("fa-circle-o");
+			statsPoints = statsPoints + 1;
+			$("#divNewGameStatsInfo").html(" ");
+		}   else if ( $("#dexStatsCircle6").hasClass("fa-circle") ) {
+			$("#dexStatsCircle6").removeClass ("fa-circle");
+			$("#dexStatsCircle6").addClass ("fa-circle-o");
+			statsPoints = statsPoints + 1;
+			$("#divNewGameStatsInfo").html(" ");
+		} else if ( $("#dexStatsCircle5").hasClass("fa-circle") ) {
 			$("#dexStatsCircle5").removeClass ("fa-circle");
 			$("#dexStatsCircle5").addClass ("fa-circle-o");
 			statsPoints = statsPoints + 1;
@@ -297,6 +348,16 @@ document.getElementById("newGameStatsWisADD").onclick = function(){
 			$("#wisStatsCircle5").addClass ("fa-circle");
 			statsPoints = statsPoints - 1;
 			$("#divNewGameStatsInfo").html(" ");
+		} else if ( $("#wisStatsCircle6").hasClass("fa-circle-o") ) {
+			$("#wisStatsCircle6").removeClass ("fa-circle-o");
+			$("#wisStatsCircle6").addClass ("fa-circle");
+			statsPoints = statsPoints - 1;
+			$("#divNewGameStatsInfo").html(" ");
+		} else if ( $("#wisStatsCircle7").hasClass("fa-circle-o") ) {
+			$("#wisStatsCircle7").removeClass ("fa-circle-o");
+			$("#wisStatsCircle7").addClass ("fa-circle");
+			statsPoints = statsPoints - 1;
+			$("#divNewGameStatsInfo").html(" ");
 		} else { $("#divNewGameStatsInfo").html("Maximun reached");}
 
 
@@ -305,16 +366,26 @@ document.getElementById("newGameStatsWisADD").onclick = function(){
 	$("#divPointsLeft").html(statsPoints +" "+"points remaining");
 	$("#divStatsDesc").html("Wisdom <br></br> It gives you more wisdom, it's useful for blablabla");
 }
-//int remove
+//wis remove
 document.getElementById("NewGameStatsWisREM").onclick = function(){
-		if ( $("#wisStatsCircle2").hasClass("fa-circle") && statsPoints < 6) {
+		if ( $("#wisStatsCircle2").hasClass("fa-circle") && statsPoints < 7) {
 
-		if ( $("#wisStatsCircle5").hasClass("fa-circle") ) {
+		if ( $("#wisStatsCircle7").hasClass("fa-circle") ) {
+			$("#wisStatsCircle7").removeClass ("fa-circle");
+			$("#wisStatsCircle7").addClass ("fa-circle-o");
+			statsPoints = statsPoints + 1;
+			$("#divNewGameStatsInfo").html(" ");
+		}else if ( $("#wisStatsCircle6").hasClass("fa-circle") ) {
+			$("#wisStatsCircle6").removeClass ("fa-circle");
+			$("#wisStatsCircle6").addClass ("fa-circle-o");
+			statsPoints = statsPoints + 1;
+			$("#divNewGameStatsInfo").html(" ");
+		} else if ( $("#wisStatsCircle5").hasClass("fa-circle") ) {
 			$("#wisStatsCircle5").removeClass ("fa-circle");
 			$("#wisStatsCircle5").addClass ("fa-circle-o");
 			statsPoints = statsPoints + 1;
 			$("#divNewGameStatsInfo").html(" ");
-		} else if ( $("#wisStatsCircle4").hasClass("fa-circle") ) {
+		}  else if ( $("#wisStatsCircle4").hasClass("fa-circle") ) {
 			$("#wisStatsCircle4").removeClass ("fa-circle");
 			$("#wisStatsCircle4").addClass ("fa-circle-o");
 			statsPoints = statsPoints + 1;

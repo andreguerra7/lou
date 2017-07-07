@@ -94,10 +94,11 @@
 <div id="divNewGame" class="container" aria-hidden="true">
     <h1> Select your god/equip/custom (CHANGE-TEXT-WITH-JS)</h1>
     <br>
-    <h4>Click on the tabs below</h4>
+    <h4>Click on the titles below</h4>
     <br>
-    <div id="divNewGameGod">
-       Choose your Path
+    <div id="divNewGameGodTab" class="newGameTab">
+    <h3 class="cursorPointer">Choose your Path</h3>
+    <div id="divNewGameGod" aria-hidden="true">
        <br>
        <br>
        <div class="row">
@@ -139,59 +140,49 @@
 </div>
 <br>
 </div>
+</div>
 <br>
 <br>
+<div id="divNewGameStatsTab" class="newGameTab">
+<h3 class="cursorPointer"> Choose your Will </h3>
 <div id="divNewGameStats"> <!--NewGame Stats-->
-    Choose your Will
     <br>
     <small id="divPointsLeft">5 points remaining</small>
     <br>
     <br>
     <div class="row">
-        <div class="col-sm-3 col-md-3">
-        </div>
-        <div class="col-sm-2 col-md-2">
+        <div class="col-sm-4 col-md-4">
            Strenght
        </div>
-       <div class="col-sm-2 col-md-2"><!--Stats circles-->
-        <i class="fa fa-circle fa-fw"></i><i id="strStatsCircle2" class="fa fa-circle-o fa-fw"></i><i id="strStatsCircle3"  class="fa fa-circle-o fa-fw"></i><i id="strStatsCircle4"  class="fa fa-circle-o fa-fw"></i><i id="strStatsCircle5"  class="fa fa-circle-o fa-fw"></i>
+       <div class="col-sm-4 col-md-4"><!--Stats circles-->
+        <i class="fa fa-circle fa-fw"></i><i id="strStatsCircle2" class="fa fa-circle-o fa-fw"></i><i id="strStatsCircle3"  class="fa fa-circle-o fa-fw"></i><i id="strStatsCircle4"  class="fa fa-circle-o fa-fw"></i><i id="strStatsCircle5"  class="fa fa-circle-o fa-fw"></i><i id="strStatsCircle6"  class="fa fa-circle-o fa-fw"></i><i id="strStatsCircle7"  class="fa fa-circle-o fa-fw"></i>
     </div>
-    <div class="col-sm-2 col-md-2"><!--Stats btns-->
+    <div class="col-sm-4 col-md-4"><!--Stats btns-->
         <i id="newGameStatsStrADD" class="fa fa-plus-square fa-fw cursorPointer"></i><i id="newGameStatsStrREM" class="fa fa-minus-square cursorPointer"></i>
-    </div>
-    <div class="col-sm-3 col-md-3">
     </div>
     <br>
 </div>
 <div class="row">
-    <div class="col-sm-3 col-md-3">
-    </div>
-    <div class="col-sm-2 col-md-2">
+     <div class="col-sm-4 col-md-4">
        Dexterity
    </div>
-   <div class="col-sm-2 col-md-2"><!--Stats circles-->
-    <i class="fa fa-circle fa-fw"></i><i id="dexStatsCircle2" class="fa fa-circle-o fa-fw"></i><i id="dexStatsCircle3" class="fa fa-circle-o fa-fw"></i><i id="dexStatsCircle4" class="fa fa-circle-o fa-fw"></i><i id="dexStatsCircle5" class="fa fa-circle-o fa-fw"></i>
+    <div class="col-sm-4 col-md-4"><!--Stats circles-->
+    <i class="fa fa-circle fa-fw"></i><i id="dexStatsCircle2" class="fa fa-circle-o fa-fw"></i><i id="dexStatsCircle3" class="fa fa-circle-o fa-fw"></i><i id="dexStatsCircle4" class="fa fa-circle-o fa-fw"></i><i id="dexStatsCircle5" class="fa fa-circle-o fa-fw"></i><i id="dexStatsCircle6" class="fa fa-circle-o fa-fw"></i><i id="dexStatsCircle7" class="fa fa-circle-o fa-fw"></i>
 </div>
-<div class="col-sm-2 col-md-2"><!--Stats btns-->
+ <div class="col-sm-4 col-md-4"><!--Stats btns-->
     <i id="newGameStatsDexADD" class="fa fa-plus-square fa-fw cursorPointer"></i><i id="newGameStatsDexREM" class="fa fa-minus-square cursorPointer"></i>
-</div>
-<div class="col-sm-3 col-md-3">
 </div>
 <br>
 </div>
 <div class="row">
-    <div class="col-sm-3 col-md-3">
-    </div>
-    <div class="col-sm-2 col-md-2">
+   <div class="col-sm-4 col-md-4">
        Wisdom
    </div>
-   <div class="col-sm-2 col-md-2"><!--Stats circles-->
-    <i class="fa fa-circle fa-fw"></i><i id="wisStatsCircle2" class="fa fa-circle-o fa-fw"></i><i id="wisStatsCircle3" class="fa fa-circle-o fa-fw"></i><i id="wisStatsCircle4" class="fa fa-circle-o fa-fw"></i><i id="wisStatsCircle5" class="fa fa-circle-o fa-fw"></i>
+    <div class="col-sm-4 col-md-4"><!--Stats circles-->
+    <i class="fa fa-circle fa-fw"></i><i id="wisStatsCircle2" class="fa fa-circle-o fa-fw"></i><i id="wisStatsCircle3" class="fa fa-circle-o fa-fw"></i><i id="wisStatsCircle4" class="fa fa-circle-o fa-fw"></i><i id="wisStatsCircle5" class="fa fa-circle-o fa-fw"></i><i id="wisStatsCircle6" class="fa fa-circle-o fa-fw"></i><i id="wisStatsCircle7" class="fa fa-circle-o fa-fw"></i>
 </div>
-<div class="col-sm-2 col-md-2"><!--Stats btns-->
+ <div class="col-sm-4 col-md-4"><!--Stats btns-->
     <i id="newGameStatsWisADD" class="fa fa-plus-square fa-fw cursorPointer"></i><i id="NewGameStatsWisREM" class="fa fa-minus-square cursorPointer"></i> 
-</div>
-<div class="col-sm-3 col-md-3">
 </div>
 <br>
 </div>
@@ -204,6 +195,7 @@
     </div>
 </div>
 <br>
+</div>
 </div>
 <br>
 <br>
